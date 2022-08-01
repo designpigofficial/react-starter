@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "types": ["vite/client", "jest"],
+    "outDir": "./dist",
+    "moduleResolution": "NodeNext"
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["dist/**/*", "vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
